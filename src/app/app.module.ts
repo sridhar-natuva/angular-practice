@@ -13,7 +13,7 @@ import { PostsService } from './posts.service';
 const appRoutes: Routes = [
   { path: 'home', component: Home },
   { path: 'about',component: About },
-  { path: '',     redirectTo: 'posts',    pathMatch: 'full'  },
+
   { path: 'posts', component: PostsComponent  }
   
 ];
@@ -36,7 +36,7 @@ const appRoutes: Routes = [
      
      PostsComponent
   ],
-  providers: [PostsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
