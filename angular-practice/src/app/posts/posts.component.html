@@ -1,0 +1,13 @@
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.css">
+
+  <base href="/">
+<div class="container">
+  <div class="row" *ngFor="let post of posts">
+    <div class="card card-block">
+      <h4 class="card-title">{{ post.title }}</h4>
+      <p class="card-text">{{post.body}}</p>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+</div>
