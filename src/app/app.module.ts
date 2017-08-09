@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
+import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { Home }   from './home.component';
 import { About }     from './about.component';
@@ -21,6 +20,7 @@ const appRoutes: Routes = [
 
   imports: [
     HttpModule,
+    MaterialModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

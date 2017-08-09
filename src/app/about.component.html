@@ -1,2 +1,8 @@
 
 <h1>this is about </h1>
+<div *ngFor="let m of message">
+<md-card style="margin :1rem">
+     <md-card-title>{{m.owner}}</md-card-title>
+    <md-card-content>{{m.text}}</md-card-content> 
+</md-card>
+</div>

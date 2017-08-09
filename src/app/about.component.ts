@@ -12,5 +12,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./style.component.css']
 })
 export class About {
-  title = 'sridhar';
+  message = [{text :'some text',owner :'sridhar'},{text :'some more text',owner :'rahul'}];
 }
