@@ -3,11 +3,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
+import { FormsModule }   from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { Home }   from './home.component';
 import { About }     from './about.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostsService } from './posts.service';
+
+import { Form } from './form.component';
+import { vechile } from './vehicle.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: Home },
@@ -20,6 +25,7 @@ const appRoutes: Routes = [
 
   imports: [
     HttpModule,
+    FormsModule,
     MaterialModule,
     RouterModule.forRoot(
       appRoutes,
@@ -31,6 +37,7 @@ const appRoutes: Routes = [
 
   declarations: [
     AppComponent,
+     Form,
      Home,
      About,
      

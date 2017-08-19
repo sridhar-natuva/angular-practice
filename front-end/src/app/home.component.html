@@ -1,1 +1,24 @@
-<h1>this is home</h1>
+
+<div class="container">
+    <h1>Vechicle Form</h1>
+    {{ diagnostic }}
+    <form>
+      <div class="form-group">
+        <label for="name">chassis Number</label>
+        <input type="text" class="form-control" id="chassis" required [(ngModel)]="model.chassis" name="chassis">
+      </div>
+
+      <div class="form-group">
+        <label for="alterEgo">Engine Number</label>
+        <input type="text" class="form-control" id="engine" [(ngModel)]="model.engine" name="engine">
+      </div>
+
+      <div class="form-group">
+        <label for="alterEgo">Vechicle Number</label>
+        <input type="text" class="form-control" id="vechile_no" [(ngModel)]="model.vechile_no" name="vechile_no">
+      </div>
+
+      <button type="submit" class="btn btn-success">Submit</button>
+
+    </form>
+</div>

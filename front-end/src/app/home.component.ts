@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { vechile }    from './vehicle.component';
 
 
 
@@ -12,5 +12,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./style.component.css']
 })
 export class Home {
-  title = 'sridhar';
+  submitted = false;
+ model = new vechile(18, 'Dr IQ', 'Chuck Overstreet');
+get diagnostic() { return JSON.stringify(this.model); }
 }
